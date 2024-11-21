@@ -1,1 +1,146 @@
- "Hello World"
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人博客</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        header {
+            background: #0078d7;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 90%;
+            margin: 2rem auto;
+            max-width: 1200px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+        .section-title {
+            color: #0078d7;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #0078d7;
+            display: inline-block;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .project-card {
+            background: #f5f5f5;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            text-align: center;
+        }
+        .project-card h3 {
+            margin: 0.5rem 0;
+        }
+        .project-card a {
+            text-decoration: none;
+            color: #0078d7;
+        }
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>欢迎来到我的个人博客！</h1>
+        <p>记录学习与成长的每一天</p>
+    </header>
+    <nav>
+        <a href="#about">关于我</a>
+        <a href="#projects">我的项目</a>
+        <a href="#blog">博客文章</a>
+        <a href="#contact">联系我</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2 class="section-title">关于我</h2>
+            <p>你好！我是一个热爱技术的开发者，专注于算法、开源项目和前沿技术研究。我喜欢分享自己的学习过程，希望通过这个博客与更多人交流和成长。</p>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">我的项目</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>算法笔记</h3>
+                    <p>记录我在算法学习中的思考与解法。</p>
+                    <a href="https://github.com/yourusername/algorithm-notes" target="_blank">查看项目</a>
+                </div>
+                <div class="project-card">
+                    <h3>个人博客系统</h3>
+                    <p>一个轻量级的博客系统，使用HTML和CSS构建。</p>
+                    <a href="https://yourusername.github.io" target="_blank">查看项目</a>
+                </div>
+                <div class="project-card">
+                    <h3>开源工具集</h3>
+                    <p>集合了一些常用的开发工具，开源社区共享。</p>
+                    <a href="https://github.com/yourusername/tools-collection" target="_blank">查看项目</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2 class="section-title">博客文章</h2>
+            <ul>
+                <li><a href="blog1.html" target="_blank">如何优化动态规划的性能</a></li>
+                <li><a href="blog2.html" target="_blank">我的算法学习心得</a></li>
+                <li><a href="blog3.html" target="_blank">前端基础：HTML和CSS布局技巧</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">联系我</h2>
+            <p>如果你有任何问题或想交流技术，欢迎通过以下方式联系我：</p>
+            <ul>
+                <li>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></li>
+                <li>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></li>
+                <li>Twitter: <a href="https://twitter.com/yourusername" target="_blank">@yourusername</a></li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>© 2024 Your Name. 保留所有权利。</p>
+    </footer>
+</body>
+</html>
+
